@@ -1,14 +1,11 @@
-ui=int(input("enter thine number:  "))
-rev=0
-temp=ui
+ui=int(input("Enter number: "))
+sum= 0
+temp= ui
 while temp>0:
-    rem=temp%10
-    print(temp)
-    rev=rem+(rev*10)
-    print(rev)
-    temp= int(temp/10)
-    print(temp)
-if rev==ui:
-    print(ui, "is a palindrome.")
+    digit=temp%10
+    sum=sum+(digit**3)
+    temp=temp//10
+if ui==sum:
+    print(ui, "is an armstrong number.")
 else:
-    print(ui, "isnt a palindrome.")
+    print(ui, "is not an armstrong number.")

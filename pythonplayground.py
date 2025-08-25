@@ -28,3 +28,4 @@ while v1==True:
      print("Do they have cracks on/around their lips?")
      if a2=="yes" or a2=="YES" or a2=="Yes":
          print("")
+         #heya

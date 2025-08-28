@@ -1,0 +1,1 @@
+print("This is a notes app. It saves data from your inpot.")

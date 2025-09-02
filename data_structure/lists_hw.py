@@ -13,7 +13,7 @@ else:
     print(ui1, "is even.")
 if ui2%2!=0:
     print(ui2, "is odd.")
-    ui2="odd"
+    odd= True
 else:
     print(ui2, "is even")
 if ui3%2!=0:
@@ -41,8 +41,15 @@ if ui1=="odd":
     if ui3=="odd":
         odd_list= [ui1,ui3]
 elif ui2=="odd":
-    odd_list= [ui1]
+    odd_list= [ui2]
     if ui3=="odd":
         odd_list=[ui2, ui3]
         if ui4=="odd":
             odd_list=[ui2,ui3,ui4]
+elif ui3=="odd":
+    odd_list= [ui3]
+else:
+    print("ue")
+
+
+print(odd_list)

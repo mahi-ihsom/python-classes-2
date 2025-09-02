@@ -8,29 +8,41 @@ ui5= int(input())
 list= [ui1, ui2, ui3, ui4, ui5]
 if ui1%2!=0:
         print(ui1, "is odd")
-        v1= ui1
+        ui1="odd"
 else:                
     print(ui1, "is even.")
 if ui2%2!=0:
     print(ui2, "is odd.")
-    v2= ui2
+    ui2="odd"
 else:
     print(ui2, "is even")
 if ui3%2!=0:
     print(ui3, "is odd.")
-    v3= ui3
+    ui3="odd"
 else:
     print(ui3, "is even")
 if ui4%2!=0:
     print(ui4,"is odd.")
-    v4= ui4
+    ui4= "odd"
 else:
    print(ui4, "is even.")
 if ui5%2!=0:
     print(ui5, "is odd.")
-    v5= ui5
+    ui5= "odd"
 else:
     print(ui5, "is even.")
-odd_list= [v1, v2, v3, v4, v5]
-print("Original list: ", list)
-print("Odd list: ", odd_list)
+
+if ui1=="odd":
+    odd_list= [ui1]
+    if ui2=="odd":
+        odd_list=[ui1, ui2]
+        if ui3=="odd":
+            odd_list=[ui1,ui2,ui3]
+    if ui3=="odd":
+        odd_list= [ui1,ui3]
+elif ui2=="odd":
+    odd_list= [ui1]
+    if ui3=="odd":
+        odd_list=[ui2, ui3]
+        if ui4=="odd":
+            odd_list=[ui2,ui3,ui4]

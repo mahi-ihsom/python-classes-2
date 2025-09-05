@@ -1,19 +1,13 @@
-#homework
-class dog(object):
-    def __init__(self, habitat, size):
+class dog:
+    species= "Mammal"
+    def __init__ (self, name, habitat):
+        self.name= name
         self.habitat= habitat
-        self.size= size
-    def display(self):
-        print(self.habitat)
-        print(self.size)
-class husky(dog):
-    def __init__(self, habitat, size):
-        dog.__init__(self, habitat, size)
-class chihuahua(dog):
-    def __init__(self, habitat, size):
-        dog.__init__(self, habitat, size)
-obj= husky("Cold", "Big")
-obj2= chihuahua("Warm", "Tiny")
-print("Huskies thrive in {} climates.".format(husky.habitat))
-print("Chihuahuas are the opposite, being from Mexico, where it is rather {}".format (chihuahua.habitat))
-print("Huskies and Chihuahuas also have another major difference- huskies are {} and Chihuahaus are {}".format (husky.size, chihuahua.size))
+
+one= dog("Husky", "cold")
+two= dog("Chihuahua", "warm")
+print("a {} is a {}".format(one.name, one.species))
+print("a {} is also a {}".format(two.name, two.species))
+
+print("{} live in {} places, like the tundra.".format(one.name, one.habitat))
+print("{} live in {} places, like Mexico.".format(two.name, two.habitat))

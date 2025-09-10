@@ -4,7 +4,7 @@ screen_width, screen_height= 500,400
 movement_speed= 5
 font_size= 72
 pygame.init()
-bg_image= pygame.transform.scale(pygame.image.load("bg.jpg"), (screen_width, screen_height))
+bg_image= pygame.transform.scale(pygame.image.load("bg_image.jpg"), (screen_width, screen_height))
 font= pygame.font.SysFont("Algerian", font_size)
 class Sprite(pygame.sprite.Sprite):
     def __init__(self, color, height, width):
